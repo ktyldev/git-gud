@@ -1,4 +1,4 @@
-docname="essay"
+docname="main"
 tex="$docname.tex"
 
 pdflatex $tex
