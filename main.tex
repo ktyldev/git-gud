@@ -77,14 +77,14 @@ Now run the command \texttt{git init}. This command creates a `repository' in th
 \paragraph{}
 You'll immediately notice a couple of things. First, there's now a faded-looking \texttt{.git} folder (\ref{fig:post-init}) sitting alongside your project. This is where Git stores whatever it needs to worry about, you shouldn't ever have to go looking in there. However, you should note that this folder needs to stay in the project root for Git to work properly. Second, there is now a blue \texttt{(master)} label after the filepath in Git's command prompt. This is the name of the current \textit{branch} you're on. Since Git stores projects as a tree, it must have at least one branch. The \texttt{master} branch is created be default in a Git repository. You can rename, add and remove branches from a repository at your leisure, but that isn't in the scope of this guide. One branch is plenty for now! As a handy tip, if there is no branch in the command prompt then that means there's no repository present either.
 
-\paragraph{}
-Now, let's make our first commit! Start out by running the command \texttt{git status} to view the current state of the repository. As seen in figure \ref{fig:status} this command outputs the folders in our project, highlighted in red because they're currently not being tracked by Git.
-
 \begin{figure}
     \includegraphics[width=\linewidth]{images/status.png}
     \caption{Output of \texttt{git status}.}
     \label{fig:status}
 \end{figure}
+
+\paragraph{}
+Now, let's make our first commit! Start out by running the command \texttt{git status} to view the current state of the repository. As seen in figure \ref{fig:status} this command outputs the folders in our project, highlighted in red because they're currently not being tracked by Git. So let's do that! Run \texttt{git add *} to tell Git to start tracking everything. You can also specify particular paths to add only specific files or folders, such as \texttt{git add Assets/}.
 
 \section{So what about working in a team?}
 \section{Keeping it clean}
